@@ -8,50 +8,56 @@ interface TestimonialsProps {
 
 const copy = {
   pt: {
-    tag: "Resultados reais",
-    title: "Quem já usa a AngiruIA",
+    tag: "O que nossos clientes dizem",
+    title: "Resultados reais",
     items: [
       {
-        name: "Marcos Oliveira",
-        role: "Clínica Odontológica",
+        name: "Ana Ferreira",
+        role: "Dona de Clínica Estética",
         stars: 5,
-        text: "Aumentamos nossas vendas em 40% no primeiro mês. O WhatsApp com IA atende os pacientes automaticamente e nossa equipe só fecha os agendamentos.",
+        text: "O Rodrigo estruturou todo meu funil e automação. Hoje recebo clientes no automático, sem precisar ficar no celular o dia todo.",
+        result: "+320% de agendamentos em 60 dias",
       },
       {
-        name: "Ana González",
-        role: "Loja de Moda Online",
+        name: "Carlos Mendes",
+        role: "Dono de E-commerce",
         stars: 5,
-        text: "O Instagram automático foi um divisor de águas. Agora cada comentário no meu post vira um lead qualificado no WhatsApp. Incrível!",
+        text: "Antes eu perdia clientes no direct. Agora com o CRM e automação, cada lead é acompanhado até fechar a venda.",
+        result: "De 50 para 400 vendas/mês",
       },
       {
-        name: "Ricardo Fernandes",
-        role: "Imobiliária",
+        name: "Luciana Santos",
+        role: "Consultora de Negócios",
         stars: 5,
-        text: "Reduzimos o tempo de atendimento pela metade e triplicamos o número de leads. O CRM integrado nos dá controle total do funil.",
+        text: "O sistema que o Rodrigo montou mudou meu negócio. Tráfego + automação = máquina de vendas.",
+        result: "+150 leads qualificados por semana",
       },
     ],
   },
   es: {
-    tag: "Resultados reales",
-    title: "Quienes ya usan AngiruIA",
+    tag: "Lo que dicen nuestros clientes",
+    title: "Resultados reales",
     items: [
       {
-        name: "Marcos Oliveira",
-        role: "Clínica Odontológica",
+        name: "Ana Ferreira",
+        role: "Dueña de Clínica Estética",
         stars: 5,
-        text: "Aumentamos nuestras ventas un 40% en el primer mes. El WhatsApp con IA atiende a los pacientes automáticamente y nuestro equipo solo cierra los turnos.",
+        text: "Rodrigo estructuró todo mi embudo y automatización. Hoy recibo clientes en automático, sin tener que estar en el celular todo el día.",
+        result: "+320% de turnos en 60 días",
       },
       {
-        name: "Ana González",
-        role: "Tienda de Moda Online",
+        name: "Carlos Mendes",
+        role: "Dueño de E-commerce",
         stars: 5,
-        text: "El Instagram automático fue un divisor de aguas. Ahora cada comentario en mi post se convierte en un lead calificado en WhatsApp. ¡Increíble!",
+        text: "Antes perdía clientes en el direct. Ahora con el CRM y automatización, cada lead es seguido hasta cerrar la venta.",
+        result: "De 50 a 400 ventas/mes",
       },
       {
-        name: "Ricardo Fernandes",
-        role: "Inmobiliaria",
+        name: "Luciana Santos",
+        role: "Consultora de Negocios",
         stars: 5,
-        text: "Reducimos el tiempo de atención a la mitad y triplicamos la cantidad de leads. El CRM integrado nos da control total del embudo.",
+        text: "El sistema que Rodrigo armó cambió mi negocio. Tráfico + automatización = máquina de ventas.",
+        result: "+150 leads calificados por semana",
       },
     ],
   },
@@ -86,6 +92,12 @@ export function Testimonials({ lang }: TestimonialsProps) {
               </div>
 
               <p className="text-[#f0f4ff] text-sm leading-relaxed flex-1">{`"${item.text}"`}</p>
+
+              {item.result && (
+                <div className="bg-[#e85d04]/10 border border-[#e85d04]/30 rounded-lg px-3 py-2">
+                  <span className="text-[#e85d04] text-xs font-bold">{item.result}</span>
+                </div>
+              )}
 
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#e85d04] to-[#1a2f55] flex items-center justify-center text-white font-bold text-sm shrink-0">

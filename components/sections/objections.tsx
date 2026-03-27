@@ -29,62 +29,54 @@ const ObjectionIcons = [
 
 const copy = {
   pt: {
-    tag: "Suas dúvidas",
+    tag: "Quebra de objeção",
     title: "Sem desculpas para não começar",
     items: [
       {
-        objection: "Não sei usar tecnologia",
-        answer: "Nosso time configura tudo para você. Você não precisa saber nada de tecnologia.",
+        objection: "Não precisa entender de tecnologia",
+        answer: "Eu configuro tudo para você. Você não precisa saber nada de tecnologia.",
       },
       {
-        objection: "Demora muito para implementar?",
-        answer: "Implementação em 48h. Você começa a ver resultados em dias, não meses.",
+        objection: "Implementação rápida",
+        answer: "Implementação em poucos dias. Você começa a ver resultados rápido.",
       },
       {
-        objection: "E se eu precisar de suporte?",
-        answer: "Suporte completo via WhatsApp. Nossa equipe está disponível para te ajudar.",
-      },
-      {
-        objection: "É caro demais para minha empresa",
-        answer: "Temos planos para todo tamanho de negócio. Fale conosco e encontramos a solução ideal.",
+        objection: "Suporte completo",
+        answer: "Suporte completo via WhatsApp. Estou disponível para te ajudar.",
       },
     ],
     benefits: [
-      "Mais vendas em menos tempo",
-      "Menos esforço operacional",
-      "Crescimento previsível e escalável",
-      "Equipe focada no que importa",
+      "Mais clientes",
+      "Menos esforço",
+      "Mais controle",
+      "Crescimento previsível",
     ],
-    benefitsTitle: "O resultado:",
+    benefitsTitle: "Benefícios:",
   },
   es: {
-    tag: "Tus dudas",
+    tag: "Quiebre de objeciones",
     title: "Sin excusas para no empezar",
     items: [
       {
-        objection: "No sé usar tecnología",
-        answer: "Nuestro equipo configura todo para vos. No necesitás saber nada de tecnología.",
+        objection: "No necesitás saber de tecnología",
+        answer: "Yo configuro todo para vos. No necesitás saber nada de tecnología.",
       },
       {
-        objection: "¿Tarda mucho en implementarse?",
-        answer: "Implementación en 48h. Empezás a ver resultados en días, no meses.",
+        objection: "Implementación rápida",
+        answer: "Implementación en pocos días. Empezás a ver resultados rápido.",
       },
       {
-        objection: "¿Y si necesito soporte?",
-        answer: "Soporte completo vía WhatsApp. Nuestro equipo está disponible para ayudarte.",
-      },
-      {
-        objection: "Es muy caro para mi empresa",
-        answer: "Tenemos planes para todo tamaño de negocio. Hablá con nosotros y encontramos la solución ideal.",
+        objection: "Soporte completo",
+        answer: "Soporte completo vía WhatsApp. Estoy disponible para ayudarte.",
       },
     ],
     benefits: [
-      "Más ventas en menos tiempo",
-      "Menos esfuerzo operacional",
-      "Crecimiento predecible y escalable",
-      "Equipo enfocado en lo que importa",
+      "Más clientes",
+      "Menos esfuerzo",
+      "Más control",
+      "Crecimiento predecible",
     ],
-    benefitsTitle: "El resultado:",
+    benefitsTitle: "Beneficios:",
   },
 }
 
@@ -101,7 +93,7 @@ export function Objections({ lang }: ObjectionsProps) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-14">
           {t.items.map((item, i) => (
             <div key={item.objection} className="bg-[#0a1628] border border-[#1e3660] rounded-2xl p-5 card-hover">
               <div className="flex items-start gap-3">
@@ -109,7 +101,7 @@ export function Objections({ lang }: ObjectionsProps) {
                   {ObjectionIcons[i]}
                 </div>
                 <div>
-                  <h3 className="text-[#e85d04] font-semibold text-base mb-1">{`"${item.objection}"`}</h3>
+                  <h3 className="text-[#e85d04] font-semibold text-base mb-1">{item.objection}</h3>
                   <p className="text-[#8da4c8] text-sm leading-relaxed">{item.answer}</p>
                 </div>
               </div>

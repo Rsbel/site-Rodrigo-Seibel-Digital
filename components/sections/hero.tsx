@@ -8,36 +8,36 @@ interface HeroProps {
 
 const copy = {
   pt: {
-    badge: "Automação com Inteligência Artificial",
+    badge: "Tráfego | CRM | Automação",
     line1: "Você está perdendo",
     line2: "clientes todos os dias…",
     line3: "E nem percebe.",
-    sub: "Automatize seu atendimento e transforme mensagens em vendas com IA — 24 horas por dia, 7 dias por semana.",
-    cta: "Falar no WhatsApp agora",
+    sub: "Transforme mensagens em vendas no automático com tráfego, CRM e automação.",
+    cta: "Falar no WhatsApp",
     stats: [
-      { value: "+300%", label: "Aumento médio em vendas" },
-      { value: "24/7", label: "Atendimento automático" },
-      { value: "-70%", label: "Menos esforço operacional" },
+      { value: "+5.000", label: "Leads gerados" },
+      { value: "24/7", label: "Sistema funcionando" },
+      { value: "100%", label: "Automático" },
     ],
   },
   es: {
-    badge: "Automatización con Inteligencia Artificial",
+    badge: "Tráfico | CRM | Automatización",
     line1: "Estás perdiendo",
     line2: "clientes todos los días…",
     line3: "Y ni te das cuenta.",
-    sub: "Automatiza tu atención y convierte mensajes en ventas con IA — 24 horas al día, 7 días a la semana.",
-    cta: "Hablar por WhatsApp ahora",
+    sub: "Convertí mensajes en ventas automáticas con tráfico, CRM y automatización.",
+    cta: "Hablar por WhatsApp",
     stats: [
-      { value: "+300%", label: "Aumento promedio en ventas" },
-      { value: "24/7", label: "Atención automática" },
-      { value: "-70%", label: "Menos esfuerzo operacional" },
+      { value: "+5.000", label: "Leads generados" },
+      { value: "24/7", label: "Sistema funcionando" },
+      { value: "100%", label: "Automático" },
     ],
   },
 }
 
 export function Hero({ lang }: HeroProps) {
   const t = copy[lang]
-  const WHATSAPP = "https://wa.me/595991000000"
+  const WHATSAPP = "https://wa.link/9ho1h0"
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 pb-16 px-4 overflow-hidden">

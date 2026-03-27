@@ -6,7 +6,7 @@ interface WhatsAppFloatProps {
   lang: Lang
 }
 
-const WHATSAPP = "https://wa.me/595991000000"
+const WHATSAPP = "https://wa.link/9ho1h0"
 
 export function WhatsAppFloat({ lang }: WhatsAppFloatProps) {
   const label = lang === "pt" ? "Falar com especialista" : "Hablar con especialista"

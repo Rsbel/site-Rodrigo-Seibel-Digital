@@ -30,27 +30,27 @@ const MachineIcons = [
 
 const copy = {
   pt: {
-    tag: "Nosso diferencial",
+    tag: "O diferencial",
     title: "Você não contrata um serviço.",
-    titleHighlight: "Você instala uma máquina de vendas.",
-    desc: "Enquanto você foca no seu negócio, nossa tecnologia trabalha incansavelmente — captando leads, respondendo clientes, fechando vendas e alimentando seu CRM.",
+    titleHighlight: "Você instala um sistema que gera vendas todos os dias.",
+    desc: "Mais de 5.000 leads gerados para empresas.",
     items: [
-      { label: "Automação total" },
-      { label: "Resultados previsíveis" },
-      { label: "Escala sem limite" },
-      { label: "Sem risco" },
+      { label: "Mais clientes" },
+      { label: "Menos esforço" },
+      { label: "Mais controle" },
+      { label: "Crescimento previsível" },
     ],
   },
   es: {
-    tag: "Nuestro diferencial",
+    tag: "El diferencial",
     title: "No contratás un servicio.",
-    titleHighlight: "Instalás una máquina de ventas.",
-    desc: "Mientras te enfocás en tu negocio, nuestra tecnología trabaja incansablemente — captando leads, respondiendo clientes, cerrando ventas y alimentando tu CRM.",
+    titleHighlight: "Instalás un sistema que vende todos los días.",
+    desc: "Más de 5.000 leads generados para empresas.",
     items: [
-      { label: "Automatización total" },
-      { label: "Resultados predecibles" },
-      { label: "Escala sin límite" },
-      { label: "Sin riesgo" },
+      { label: "Más clientes" },
+      { label: "Menos esfuerzo" },
+      { label: "Más control" },
+      { label: "Crecimiento predecible" },
     ],
   },
 }
