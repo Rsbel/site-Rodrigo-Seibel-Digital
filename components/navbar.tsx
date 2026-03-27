@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { LanguageToggle, type Lang } from "@/components/language-toggle"
 
 interface NavbarProps {
@@ -9,18 +8,12 @@ interface NavbarProps {
 }
 
 export function Navbar({ lang, setLang }: NavbarProps) {
-  const WHATSAPP = "https://wa.me/595991000000"
+  const WHATSAPP = "https://wa.link/9ho1h0"
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a1628]/90 backdrop-blur-md border-b border-[#1e3660]">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Image
-          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Novo%20logo%20sem%20fundo%20%281%29-aW6zSBEY8vTvXxrh1VCLyH4CZGho1A.png"
-          alt="AngiruIA"
-          width={160}
-          height={52}
-          className="h-10 w-auto object-contain"
-        />
+        <span className="font-heading font-bold text-white text-xl">Rodrigo Seibel</span>
         <div className="flex items-center gap-3">
           <LanguageToggle lang={lang} setLang={setLang} />
           <a

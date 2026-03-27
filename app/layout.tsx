@@ -15,10 +15,10 @@ const barlow = Barlow({
 })
 
 export const metadata: Metadata = {
-  title: 'AngiruIA – Automação, IA e Marketing Digital',
-  description: 'Automatize seu atendimento e transforme mensagens em vendas com inteligência artificial. WhatsApp, Instagram, CRM e tráfego pago.',
+  title: 'Rodrigo Seibel – Tráfego, CRM e Automação',
+  description: 'Transforme mensagens em vendas no automático com tráfego, CRM e automação. Estruture seu negócio digital para vender todos os dias.',
   generator: 'v0.app',
-  keywords: ['automação', 'inteligência artificial', 'marketing digital', 'WhatsApp', 'tráfego pago', 'CRM'],
+  keywords: ['tráfego pago', 'CRM', 'automação', 'marketing digital', 'WhatsApp', 'vendas'],
 }
 
 export default function RootLayout({

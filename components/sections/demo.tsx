@@ -40,7 +40,7 @@ const copy = {
       { text: "Mensagem automática enviada" },
       { text: "Venda realizada" },
     ],
-    msgTitle: "AngiruIA Bot",
+    msgTitle: "Rodrigo Seibel",
     msg: "Olá! Vi que você se interessou. Posso te apresentar nossa solução em 2 minutos? Clique aqui",
     msgTime: "agora",
     cta: "Quero isso no meu negócio",
@@ -58,7 +58,7 @@ const copy = {
       { text: "Mensaje automático enviado" },
       { text: "Venta realizada" },
     ],
-    msgTitle: "AngiruIA Bot",
+    msgTitle: "Rodrigo Seibel",
     msg: "¡Hola! Vi que te interesó. ¿Puedo presentarte nuestra solución en 2 minutos? Hacé clic aquí",
     msgTime: "ahora",
     cta: "Quiero esto en mi negocio",
@@ -69,7 +69,7 @@ const copy = {
 export function Demo({ lang }: DemoProps) {
   const t = copy[lang]
   const [step, setStep] = useState(0)
-  const WHATSAPP = "https://wa.me/595991000000"
+  const WHATSAPP = "https://wa.link/9ho1h0"
 
   useEffect(() => {
     const interval = setInterval(() => {

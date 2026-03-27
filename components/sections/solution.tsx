@@ -9,24 +9,24 @@ interface SolutionProps {
 const copy = {
   pt: {
     tag: "A solução",
-    title: "A AngiruIA automatiza tudo para você.",
-    desc: "Uma plataforma completa de automação que trabalha por você enquanto você dorme, viaja ou foca no que realmente importa.",
+    title: "Eu estruturo todo o seu digital para gerar e organizar clientes automaticamente.",
+    desc: "Venda todos os dias com um sistema que trabalha por você 24h.",
     points: [
-      "Respostas instantâneas no WhatsApp e Instagram",
-      "Captação de leads 24 horas por dia",
-      "Follow-up automático sem esforço",
-      "Integração com CRM e gestão completa",
+      "Cliente comenta: 'eu quero'",
+      "Recebe mensagem automática",
+      "Vai para o WhatsApp",
+      "Venda fechada",
     ],
   },
   es: {
     tag: "La solución",
-    title: "AngiruIA automatiza todo para vos.",
-    desc: "Una plataforma completa de automatización que trabaja por vos mientras dormís, viajás o te enfocás en lo que realmente importa.",
+    title: "Yo estructuro todo tu sistema digital para generar y organizar clientes automáticamente.",
+    desc: "Vendé todos los días con un sistema que trabaja por vos 24h.",
     points: [
-      "Respuestas instantáneas en WhatsApp e Instagram",
-      "Captación de leads 24 horas al día",
-      "Follow-up automático sin esfuerzo",
-      "Integración con CRM y gestión completa",
+      "Cliente comenta: 'yo quiero'",
+      "Recibe mensaje automático",
+      "Va al WhatsApp",
+      "Venta cerrada",
     ],
   },
 }
@@ -67,7 +67,7 @@ export function Solution({ lang }: SolutionProps) {
                 <div className="w-3 h-3 rounded-full bg-[#e85d04]" />
                 <div className="w-3 h-3 rounded-full bg-[#1a2f55]" />
                 <div className="w-3 h-3 rounded-full bg-[#1a2f55]" />
-                <span className="text-xs text-[#8da4c8] ml-2 font-mono">AngiruIA · Dashboard</span>
+                <span className="text-xs text-[#8da4c8] ml-2 font-mono">Rodrigo Seibel · Dashboard</span>
               </div>
               <div className="space-y-3">
                 {[

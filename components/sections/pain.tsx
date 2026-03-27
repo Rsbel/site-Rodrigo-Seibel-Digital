@@ -9,7 +9,7 @@ interface PainProps {
 const PainItems = {
   pt: [
     {
-      title: "Demora para responder",
+      title: "Demora pra responder",
       desc: "Enquanto você pensa em responder, o cliente já foi para o concorrente.",
     },
     {
@@ -17,12 +17,8 @@ const PainItems = {
       desc: "Mensagens sem resposta = dinheiro indo embora todo dia.",
     },
     {
-      title: "Não consegue escalar",
-      desc: "Você trabalha mais e mais, mas o resultado não cresce na mesma proporção.",
-    },
-    {
-      title: "Processo manual e lento",
-      desc: "Copiando e colando respostas o dia inteiro enquanto poderia estar vendendo.",
+      title: "Não tem controle do comercial",
+      desc: "Sem saber quantos leads entraram, quantos foram atendidos e quantos fecharam.",
     },
   ],
   es: [
@@ -35,12 +31,8 @@ const PainItems = {
       desc: "Mensajes sin respuesta = dinero yéndose todos los días.",
     },
     {
-      title: "No podés escalar",
-      desc: "Trabajás más y más, pero el resultado no crece en la misma proporción.",
-    },
-    {
-      title: "Proceso manual y lento",
-      desc: "Copiando y pegando respuestas todo el día en vez de vender.",
+      title: "No tenés control comercial",
+      desc: "Sin saber cuántos leads entraron, cuántos fueron atendidos y cuántos cerraron.",
     },
   ],
 }
@@ -54,22 +46,15 @@ const icons = [
   <svg key="trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6 text-[#e85d04]">
     <polyline points="23 18 13.5 8.5 8.5 13.5 1 6" /><polyline points="17 18 23 18 23 12" />
   </svg>,
-  // Block / no scale
+  // Block / no control
   <svg key="block" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6 text-[#e85d04]">
     <circle cx="12" cy="12" r="10" /><line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
-  </svg>,
-  // Loader / manual
-  <svg key="loader" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6 text-[#e85d04]">
-    <line x1="12" y1="2" x2="12" y2="6" /><line x1="12" y1="18" x2="12" y2="22" />
-    <line x1="4.93" y1="4.93" x2="7.76" y2="7.76" /><line x1="16.24" y1="16.24" x2="19.07" y2="19.07" />
-    <line x1="2" y1="12" x2="6" y2="12" /><line x1="18" y1="12" x2="22" y2="12" />
-    <line x1="4.93" y1="19.07" x2="7.76" y2="16.24" /><line x1="16.24" y1="7.76" x2="19.07" y2="4.93" />
   </svg>,
 ]
 
 export function Pain({ lang }: PainProps) {
   const items = PainItems[lang]
-  const tag = lang === "pt" ? "Você se identifica?" : "¿Te identificás?"
+  const tag = lang === "pt" ? "Se você" : "Si vos"
   const title = lang === "pt" ? "Seu negócio está travado." : "Tu negocio está frenado."
 
   return (
@@ -82,7 +67,7 @@ export function Pain({ lang }: PainProps) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {items.map((item, i) => (
             <div
               key={item.title}

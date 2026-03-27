@@ -8,40 +8,40 @@ interface CtaProps {
 
 const copy = {
   pt: {
-    urgency: "Atenção: vagas limitadas esta semana",
-    tag: "Oferta especial",
-    title: "Consultoria gratuita + diagnóstico do seu negócio",
-    desc: "Nossa equipe vai analisar seu negócio, identificar os maiores gargalos e mostrar exatamente como automatizar suas vendas.",
+    urgency: "Atendo poucas empresas por semana",
+    tag: "Diagnóstico estratégico gratuito",
+    title: "Descubra exatamente o que está impedindo seu negócio de vender mais",
+    desc: "Vou analisar seu negócio, identificar os maiores gargalos e mostrar exatamente como estruturar suas vendas.",
     includes: [
       "Diagnóstico completo do negócio",
-      "Mapeamento de oportunidades de automação",
+      "Mapeamento de oportunidades",
       "Plano de ação personalizado",
-      "Sem compromisso de contratação",
+      "Sem compromisso",
     ],
-    cta: "Quero minha consultoria gratuita agora",
-    sub: "Atendemos poucas empresas por semana. Garanta já a sua vaga.",
-    differential: "Você não contrata um serviço. Você instala uma máquina de vendas.",
+    cta: "Quero estruturar meu negócio agora",
+    sub: "Atendo poucas empresas por semana. Garanta já a sua vaga.",
+    differential: "Você não contrata um serviço. Você instala um sistema que gera vendas todos os dias.",
   },
   es: {
-    urgency: "Atención: cupos limitados esta semana",
-    tag: "Oferta especial",
-    title: "Consultoría gratuita + diagnóstico de tu negocio",
-    desc: "Nuestro equipo va a analizar tu negocio, identificar los principales cuellos de botella y mostrar exactamente cómo automatizar tus ventas.",
+    urgency: "Atiendo pocas empresas por semana",
+    tag: "Diagnóstico estratégico gratuito",
+    title: "Descubrí exactamente qué está impidiendo que tu negocio venda más",
+    desc: "Voy a analizar tu negocio, identificar los principales cuellos de botella y mostrar exactamente cómo estructurar tus ventas.",
     includes: [
       "Diagnóstico completo del negocio",
-      "Mapeo de oportunidades de automatización",
+      "Mapeo de oportunidades",
       "Plan de acción personalizado",
-      "Sin compromiso de contratación",
+      "Sin compromiso",
     ],
-    cta: "Quiero mi consultoría gratuita ahora",
-    sub: "Atendemos pocas empresas por semana. Asegurá tu lugar ya.",
-    differential: "No contratás un servicio. Instalás una máquina de ventas.",
+    cta: "Quiero estructurar mi negocio ahora",
+    sub: "Atiendo pocas empresas por semana. Asegurá tu lugar ya.",
+    differential: "No contratás un servicio. Instalás un sistema que vende todos los días.",
   },
 }
 
 export function Cta({ lang }: CtaProps) {
   const t = copy[lang]
-  const WHATSAPP = "https://wa.me/595991000000"
+  const WHATSAPP = "https://wa.link/9ho1h0"
 
   return (
     <section className="py-20 px-4 bg-[#0a1628] relative overflow-hidden">
